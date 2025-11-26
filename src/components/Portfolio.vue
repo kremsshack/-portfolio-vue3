@@ -45,7 +45,9 @@
     <section id="realisations">
       <h2>Réalisations</h2>
       <div class="projects">
-        <a href="/memory" class="project">memory codé en vue 3</a>
+        <router-link to="/memory" class="project"
+          >memory codé en vue 3</router-link
+        >
         <a href="#" class="project">Projet 2</a>
         <a href="#" class="project">Projet 3</a>
         <a href="#" class="project">Projet 4</a>
