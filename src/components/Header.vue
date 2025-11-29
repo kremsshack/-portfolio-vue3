@@ -18,30 +18,21 @@
     </label>
 
     <nav :class="{ 'menu-open': isMenuOpen }">
-      <a href="#accueil" @click="closeMenu">Accueil</a>
-      <a href="#apropos" @click="closeMenu">À propos</a>
-      <a href="#realisations" @click="closeMenu">Réalisations</a>
-      <a href="#softskills" @click="closeMenu">Soft Skills</a>
-      <a href="#technologie" @click="closeMenu">Technologies</a>
-      <a href="#contact" @click="closeMenu">Contact</a>
+      <router-link to="/" @click="closeMenu">Accueil</router-link>
+      <a href="/#apropos" @click="closeMenu">À propos</a>
+      <a href="/#realisations" @click="closeMenu">Réalisations</a>
+      <a href="/#softskills" @click="closeMenu">Soft Skills</a>
+      <a href="/#technologie" @click="closeMenu">Technologies</a>
+      <a href="/#contact" @click="closeMenu">Contact</a>
     </nav>
   </header>
 </template>
-
 <script setup>
-// src/components/Header.vue
-
 import { ref } from "vue";
-
-// Variable d'état pour le menu mobile
 const isMenuOpen = ref(false);
-
-// Fonction pour fermer le menu quand on clique sur un lien (mobile)
 const closeMenu = () => {
   isMenuOpen.value = false;
 };
 </script>
 
-<style scoped>
-/* Laissez vide si le CSS header est dans style.css */
-</style>
+<style scoped></style>
